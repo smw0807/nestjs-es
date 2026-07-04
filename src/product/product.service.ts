@@ -1,7 +1,10 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
 import { InjectIndex, EsIndexService } from 'nestjs-es-kit';
 import { Product } from './product.schema';
-import { BulkCreateProductDto, CreateProductDto } from './dto/create-product.dto';
+import {
+  BulkCreateProductDto,
+  CreateProductDto,
+} from './dto/create-product.dto';
 import {
   CursorSearchProductDto,
   SearchProductDto,
@@ -114,9 +117,7 @@ export class ProductService {
 
   async cursorSearch(dto: CursorSearchProductDto) {
     const result = await this.products.searchAfter({
-      query: dto.keyword
-        ? { match: { name: dto.keyword } }
-        : { match_all: {} },
+      query: dto.keyword ? { match: { name: dto.keyword } } : { match_all: {} },
       sort: [{ createdAt: 'desc' }, { id: 'asc' }],
       size: dto.size,
       after: this.decodeCursor(dto.cursor),
@@ -167,6 +168,8 @@ export class ProductService {
 
   private decodeCursor(cursor?: string): unknown[] | undefined {
     if (!cursor) return undefined;
-    return JSON.parse(Buffer.from(cursor, 'base64url').toString('utf8'));
+    return JSON.parse(
+      Buffer.from(cursor, 'base64url').toString('utf8'),
+    ) as unknown[];
   }
 }
