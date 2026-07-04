@@ -1,0 +1,404 @@
+{
+  "products": [
+    {
+      "id": "p001",
+      "name": "삼성 갤럭시북4 프로 노트북",
+      "description": "인텔 코어 울트라 탑재 가벼운 휴대용 노트북",
+      "category": "전자제품",
+      "price": 1890000,
+      "stock": 12
+    },
+    {
+      "id": "p002",
+      "name": "LG 그램 17인치 노트북",
+      "description": "대화면 초경량 노트북, 장시간 배터리",
+      "category": "전자제품",
+      "price": 2190000,
+      "stock": 8
+    },
+    {
+      "id": "p003",
+      "name": "애플 맥북 에어 M3",
+      "description": "M3 칩 탑재 팬리스 노트북",
+      "category": "전자제품",
+      "price": 1590000,
+      "stock": 20
+    },
+    {
+      "id": "p004",
+      "name": "애플 맥북 프로 14 M3 Pro",
+      "description": "전문가용 고성능 노트북, 미니LED 디스플레이",
+      "category": "전자제품",
+      "price": 2990000,
+      "stock": 5
+    },
+    {
+      "id": "p005",
+      "name": "레노버 씽크패드 X1 카본",
+      "description": "비즈니스 노트북의 정석, 견고한 키보드",
+      "category": "전자제품",
+      "price": 2450000,
+      "stock": 7
+    },
+    {
+      "id": "p006",
+      "name": "삼성 갤럭시 탭 S9 태블릿",
+      "description": "S펜 포함 안드로이드 태블릿",
+      "category": "전자제품",
+      "price": 999000,
+      "stock": 30
+    },
+    {
+      "id": "p007",
+      "name": "아이패드 프로 11인치",
+      "description": "M4 칩 탑재 태블릿, 프로모션 디스플레이",
+      "category": "전자제품",
+      "price": 1249000,
+      "stock": 25
+    },
+    {
+      "id": "p008",
+      "name": "삼성 갤럭시 S24 울트라 스마트폰",
+      "description": "AI 기능 탑재 플래그십 스마트폰",
+      "category": "전자제품",
+      "price": 1698400,
+      "stock": 40
+    },
+    {
+      "id": "p009",
+      "name": "아이폰 16 프로",
+      "description": "티타늄 디자인 프리미엄 스마트폰",
+      "category": "전자제품",
+      "price": 1550000,
+      "stock": 35
+    },
+    {
+      "id": "p010",
+      "name": "LG 울트라기어 32인치 게이밍 모니터",
+      "description": "QHD 240Hz 게이밍 모니터",
+      "category": "전자제품",
+      "price": 649000,
+      "stock": 15
+    },
+    {
+      "id": "p011",
+      "name": "소니 WH-1000XM5 무선 헤드폰",
+      "description": "업계 최고 수준 노이즈 캔슬링 헤드폰",
+      "category": "음향기기",
+      "price": 459000,
+      "stock": 50
+    },
+    {
+      "id": "p012",
+      "name": "에어팟 프로 2세대",
+      "description": "액티브 노이즈 캔슬링 무선 이어폰",
+      "category": "음향기기",
+      "price": 359000,
+      "stock": 120
+    },
+    {
+      "id": "p013",
+      "name": "삼성 갤럭시 버즈3 프로",
+      "description": "지능형 노이즈 제어 무선 이어폰",
+      "category": "음향기기",
+      "price": 289000,
+      "stock": 90
+    },
+    {
+      "id": "p014",
+      "name": "보스 사운드링크 블루투스 스피커",
+      "description": "휴대용 방수 블루투스 스피커",
+      "category": "음향기기",
+      "price": 189000,
+      "stock": 60
+    },
+    {
+      "id": "p015",
+      "name": "JBL 플립6 포터블 스피커",
+      "description": "야외용 방수 블루투스 스피커",
+      "category": "음향기기",
+      "price": 139000,
+      "stock": 75
+    },
+    {
+      "id": "p016",
+      "name": "슈어 SM7B 다이나믹 마이크",
+      "description": "방송·녹음용 전문가 마이크",
+      "category": "음향기기",
+      "price": 549000,
+      "stock": 10
+    },
+    {
+      "id": "p017",
+      "name": "오디오테크니카 턴테이블",
+      "description": "블루투스 지원 LP 턴테이블",
+      "category": "음향기기",
+      "price": 329000,
+      "stock": 18
+    },
+    {
+      "id": "p018",
+      "name": "기계식 키보드 청축",
+      "description": "타건감 좋은 게이밍 기계식 키보드",
+      "category": "주변기기",
+      "price": 129000,
+      "stock": 45
+    },
+    {
+      "id": "p019",
+      "name": "로지텍 MX 마스터 3S 마우스",
+      "description": "생산성 특화 무선 마우스, 저소음 클릭",
+      "category": "주변기기",
+      "price": 149000,
+      "stock": 80
+    },
+    {
+      "id": "p020",
+      "name": "레이저 게이밍 마우스",
+      "description": "초경량 무선 게이밍 마우스",
+      "category": "주변기기",
+      "price": 179000,
+      "stock": 55
+    },
+    {
+      "id": "p021",
+      "name": "로지텍 웹캠 브리오 4K",
+      "description": "화상회의용 4K 웹캠",
+      "category": "주변기기",
+      "price": 259000,
+      "stock": 22
+    },
+    {
+      "id": "p022",
+      "name": "커세어 게이밍 헤드셋",
+      "description": "7.1 서라운드 게이밍 헤드셋",
+      "category": "주변기기",
+      "price": 119000,
+      "stock": 38
+    },
+    {
+      "id": "p023",
+      "name": "엘가토 스트림덱 MK.2",
+      "description": "방송용 매크로 컨트롤러",
+      "category": "주변기기",
+      "price": 199000,
+      "stock": 14
+    },
+    {
+      "id": "p024",
+      "name": "와콤 인튜어스 드로잉 태블릿",
+      "description": "입문용 펜 태블릿",
+      "category": "주변기기",
+      "price": 89000,
+      "stock": 33
+    },
+    {
+      "id": "p025",
+      "name": "노트북 파우치 15인치",
+      "description": "충격 방지 노트북 가방",
+      "category": "액세서리",
+      "price": 25000,
+      "stock": 200
+    },
+    {
+      "id": "p026",
+      "name": "USB-C 허브 멀티포트",
+      "description": "노트북용 확장 허브, HDMI·SD카드 지원",
+      "category": "액세서리",
+      "price": 45000,
+      "stock": 88
+    },
+    {
+      "id": "p027",
+      "name": "노트북 거치대 알루미늄",
+      "description": "각도 조절 가능한 노트북 스탠드",
+      "category": "액세서리",
+      "price": 32000,
+      "stock": 150
+    },
+    {
+      "id": "p028",
+      "name": "무선 충전 패드 3in1",
+      "description": "스마트폰·워치·이어폰 동시 충전",
+      "category": "액세서리",
+      "price": 59000,
+      "stock": 95
+    },
+    {
+      "id": "p029",
+      "name": "스마트폰 케이스 투명",
+      "description": "황변 방지 투명 케이스",
+      "category": "액세서리",
+      "price": 9900,
+      "stock": 500
+    },
+    {
+      "id": "p030",
+      "name": "강화유리 액정보호필름",
+      "description": "9H 강도 풀커버 보호필름",
+      "category": "액세서리",
+      "price": 7900,
+      "stock": 800
+    },
+    {
+      "id": "p031",
+      "name": "케이블 정리 클립 세트",
+      "description": "책상 위 케이블 정리용 클립 10개입",
+      "category": "액세서리",
+      "price": 5900,
+      "stock": 300
+    },
+    {
+      "id": "p032",
+      "name": "보조배터리 20000mAh",
+      "description": "고속충전 지원 대용량 보조배터리",
+      "category": "액세서리",
+      "price": 39000,
+      "stock": 130
+    },
+    {
+      "id": "p033",
+      "name": "LG 스탠바이미 이동식 스크린",
+      "description": "배터리 내장 무선 이동식 스크린",
+      "category": "가전",
+      "price": 1090000,
+      "stock": 9
+    },
+    {
+      "id": "p034",
+      "name": "다이슨 에어랩 스타일러",
+      "description": "멀티 스타일링 헤어 기기",
+      "category": "가전",
+      "price": 799000,
+      "stock": 16
+    },
+    {
+      "id": "p035",
+      "name": "삼성 비스포크 공기청정기",
+      "description": "펫 케어 필터 공기청정기",
+      "category": "가전",
+      "price": 549000,
+      "stock": 21
+    },
+    {
+      "id": "p036",
+      "name": "발뮤다 토스터",
+      "description": "스팀 기술로 빵을 굽는 프리미엄 토스터",
+      "category": "가전",
+      "price": 329000,
+      "stock": 27
+    },
+    {
+      "id": "p037",
+      "name": "네스프레소 캡슐 커피머신",
+      "description": "가정용 에스프레소 커피머신",
+      "category": "가전",
+      "price": 219000,
+      "stock": 42
+    },
+    {
+      "id": "p038",
+      "name": "샤오미 로봇청소기",
+      "description": "물걸레 겸용 스마트 로봇청소기",
+      "category": "가전",
+      "price": 429000,
+      "stock": 19
+    },
+    {
+      "id": "p039",
+      "name": "닌텐도 스위치 OLED",
+      "description": "OLED 디스플레이 휴대용 게임기",
+      "category": "게임",
+      "price": 415000,
+      "stock": 48
+    },
+    {
+      "id": "p040",
+      "name": "소니 플레이스테이션5 슬림",
+      "description": "차세대 콘솔 게임기 디스크 에디션",
+      "category": "게임",
+      "price": 688000,
+      "stock": 13
+    },
+    {
+      "id": "p041",
+      "name": "젤다의 전설 왕국의 눈물",
+      "description": "닌텐도 스위치 오픈월드 게임 타이틀",
+      "category": "게임",
+      "price": 64800,
+      "stock": 70
+    },
+    {
+      "id": "p042",
+      "name": "듀얼센스 무선 컨트롤러",
+      "description": "PS5용 햅틱 피드백 컨트롤러",
+      "category": "게임",
+      "price": 74800,
+      "stock": 65
+    },
+    {
+      "id": "p043",
+      "name": "게이밍 체어 인체공학",
+      "description": "장시간 게임용 리클라이닝 의자",
+      "category": "게임",
+      "price": 289000,
+      "stock": 11
+    },
+    {
+      "id": "p044",
+      "name": "클린 코드",
+      "description": "로버트 마틴의 소프트웨어 장인 정신 필독서",
+      "category": "도서",
+      "price": 29700,
+      "stock": 100
+    },
+    {
+      "id": "p045",
+      "name": "엘라스틱서치 실무 가이드",
+      "description": "검색엔진 구축과 데이터 분석 실전 안내서",
+      "category": "도서",
+      "price": 35100,
+      "stock": 60
+    },
+    {
+      "id": "p046",
+      "name": "NestJS로 배우는 백엔드 프로그래밍",
+      "description": "타입스크립트 기반 백엔드 프레임워크 입문서",
+      "category": "도서",
+      "price": 28800,
+      "stock": 55
+    },
+    {
+      "id": "p047",
+      "name": "이펙티브 타입스크립트",
+      "description": "타입스크립트 코드 품질을 높이는 62가지 방법",
+      "category": "도서",
+      "price": 26100,
+      "stock": 85
+    },
+    {
+      "id": "p048",
+      "name": "데이터 중심 애플리케이션 설계",
+      "description": "분산 시스템과 데이터베이스 설계의 바이블",
+      "category": "도서",
+      "price": 42300,
+      "stock": 45
+    },
+    {
+      "id": "p049",
+      "name": "스탠딩 데스크 전동식",
+      "description": "높이 조절 전동 책상, 메모리 프리셋",
+      "category": "가구",
+      "price": 549000,
+      "stock": 8
+    },
+    {
+      "id": "p050",
+      "name": "허먼밀러 에어론 의자",
+      "description": "인체공학 사무용 의자의 대명사",
+      "category": "가구",
+      "price": 2190000,
+      "stock": 4
+    }
+  ]
+}
