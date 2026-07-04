@@ -4,6 +4,7 @@ import { EsKitModule } from 'nestjs-es-kit';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { appConfig, elasticsearchConfig, validationSchema } from './config';
+import { ProductModule } from './product/product.module';
 
 @Module({
   imports: [
@@ -25,9 +26,14 @@ import { appConfig, elasticsearchConfig, validationSchema } from './config';
           'elasticsearch.sync',
           'create',
         ),
+        // 로컬 ES의 자체 서명 인증서 허용 (개발 환경 전용)
+        ...(config.get('app.nodeEnv') === 'development' && {
+          tls: { rejectUnauthorized: false },
+        }),
       }),
       inject: [ConfigService],
     }),
+    ProductModule,
   ],
   controllers: [AppController],
   providers: [AppService],
