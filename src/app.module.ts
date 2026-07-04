@@ -5,6 +5,7 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { appConfig, elasticsearchConfig, validationSchema } from './config';
 import { ProductModule } from './product/product.module';
+import { LogModule } from './log/log.module';
 
 @Module({
   imports: [
@@ -34,6 +35,7 @@ import { ProductModule } from './product/product.module';
       inject: [ConfigService],
     }),
     ProductModule,
+    LogModule,
   ],
   controllers: [AppController],
   providers: [AppService],

@@ -2,36 +2,43 @@ import { EsIndex, EsField, koreanAnalysis } from 'nestjs-es-kit';
 import { ES9_STOPTAGS } from '../common/nori.constants';
 
 @EsIndex({
-  name: 'products',
+  name: 'app-logs',
   settings: {
     numberOfShards: 1,
     numberOfReplicas: 0,
     analysis: koreanAnalysis({ stoptags: ES9_STOPTAGS }),
   },
 })
-export class Product {
+export class AppLog {
   @EsField({ type: 'keyword' })
-  id: string;
+  level: string;
 
+  @EsField({ type: 'keyword' })
+  service: string;
+
+  // raw: 동일 메시지 집계용(Top N), 본문은 nori로 한국어 검색
   @EsField({
     type: 'text',
     analyzer: 'nori_analyzer',
     fields: { raw: { type: 'keyword' } },
   })
-  name: string;
-
-  @EsField({ type: 'text', analyzer: 'nori_analyzer' })
-  description: string;
+  message: string;
 
   @EsField({ type: 'keyword' })
-  category: string;
+  traceId: string;
+
+  @EsField({ type: 'keyword' })
+  method: string;
+
+  @EsField({ type: 'keyword' })
+  path: string;
 
   @EsField({ type: 'integer' })
-  price: number;
+  statusCode: number;
 
   @EsField({ type: 'integer' })
-  stock: number;
+  durationMs: number;
 
   @EsField({ type: 'date' })
-  createdAt: Date;
+  timestamp: Date;
 }
