@@ -80,10 +80,10 @@ export class LogService {
       { query: this.buildQuery(dto) },
     );
 
-    const overTime = aggs.overTime as DateHistogramBuckets;
+    const buckets = aggs.overTime.buckets as StatsBucket[];
     return {
       interval: dto.interval,
-      buckets: overTime.buckets.map((b) => ({
+      buckets: buckets.map((b) => ({
         time: b.key_as_string,
         count: b.doc_count,
         levels: Object.fromEntries(
@@ -112,9 +112,8 @@ export class LogService {
       { query },
     );
 
-    const topMessages = aggs.topMessages as TermsBuckets;
     return {
-      items: topMessages.buckets.map((b) => ({
+      items: aggs.topMessages.buckets.map((b) => ({
         message: b.key,
         count: b.doc_count,
       })),
@@ -143,9 +142,9 @@ export class LogService {
       { query: this.buildQuery(dto) },
     );
 
-    const byService = aggs.byService as ServiceBuckets;
+    const buckets = aggs.byService.buckets as ServiceBucket[];
     return {
-      services: byService.buckets.map((b) => ({
+      services: buckets.map((b) => ({
         service: b.key,
         count: b.doc_count,
         avgDurationMs: b.avgDuration.value

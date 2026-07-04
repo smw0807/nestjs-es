@@ -94,24 +94,17 @@ export class ProductService {
       { query: this.buildQuery(dto) },
     );
 
-    const byCategory = aggs.byCategory as {
-      buckets: { key: string; doc_count: number }[];
-    };
-    const priceRanges = aggs.priceRanges as {
-      buckets: { key: string; doc_count: number }[];
-    };
-    const avgPrice = aggs.avgPrice as { value: number | null };
-
+    // v1.0.0부터 집계 정의로부터 응답 타입이 자동 추론된다
     return {
-      categories: byCategory.buckets.map((b) => ({
+      categories: aggs.byCategory.buckets.map((b) => ({
         category: b.key,
         count: b.doc_count,
       })),
-      priceRanges: priceRanges.buckets.map((b) => ({
+      priceRanges: aggs.priceRanges.buckets.map((b) => ({
         range: b.key,
         count: b.doc_count,
       })),
-      avgPrice: avgPrice.value,
+      avgPrice: aggs.avgPrice.value,
     };
   }
 
