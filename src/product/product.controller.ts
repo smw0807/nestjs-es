@@ -8,7 +8,10 @@ import {
   Query,
 } from '@nestjs/common';
 import { ProductService } from './product.service';
-import { BulkCreateProductDto, CreateProductDto } from './dto/create-product.dto';
+import {
+  BulkCreateProductDto,
+  CreateProductDto,
+} from './dto/create-product.dto';
 import {
   CursorSearchProductDto,
   SearchProductDto,
