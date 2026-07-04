@@ -1,5 +1,10 @@
 import { Injectable } from '@nestjs/common';
-import { InjectIndex, EsIndexService } from 'nestjs-es-kit';
+import {
+  InjectIndex,
+  EsIndexService,
+  type TermsBucket,
+  type DateHistogramBucket,
+} from 'nestjs-es-kit';
 import { AppLog } from './log.schema';
 import { IngestLogsDto, LogLevel } from './dto/ingest-log.dto';
 import {
@@ -10,26 +15,15 @@ import {
   TopErrorsDto,
 } from './dto/query-log.dto';
 
-interface TermsBuckets {
-  buckets: { key: string; doc_count: number }[];
+// 라이브러리가 추론하지 못하는 하위 집계(sub-aggregation) 필드만 확장한다
+interface StatsBucket extends DateHistogramBucket {
+  byLevel: { buckets: TermsBucket[] };
 }
 
-interface DateHistogramBuckets {
-  buckets: {
-    key_as_string: string;
-    doc_count: number;
-    byLevel: TermsBuckets;
-  }[];
-}
-
-interface ServiceBuckets {
-  buckets: {
-    key: string;
-    doc_count: number;
-    avgDuration: { value: number | null };
-    p95Duration: { values: Record<string, number | null> };
-    errors: { doc_count: number };
-  }[];
+interface ServiceBucket extends TermsBucket {
+  avgDuration: { value: number | null };
+  p95Duration: { values: Record<string, number | null> };
+  errors: { doc_count: number };
 }
 
 @Injectable()
