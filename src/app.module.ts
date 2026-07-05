@@ -6,6 +6,7 @@ import { AppService } from './app.service';
 import { appConfig, elasticsearchConfig, validationSchema } from './config';
 import { ProductModule } from './product/product.module';
 import { LogModule } from './log/log.module';
+import { HealthModule } from './health/health.module';
 
 @Module({
   imports: [
@@ -36,6 +37,7 @@ import { LogModule } from './log/log.module';
     }),
     ProductModule,
     LogModule,
+    HealthModule,
   ],
   controllers: [AppController],
   providers: [AppService],
